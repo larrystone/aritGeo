@@ -48,31 +48,31 @@ describe("aritGeo() for Arithmetic arrays", () => {
 
  describe("aritGeo() for invalid array (neither arithmetic nor geometric)", () => {
     it("[5,4,1,5,4]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+        expect(aritGeo([5,4,1,5,4])).to.equal(-1);
     });
     
     it("[50,12,13,14]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+        expect(aritGeo([50,12,13,14])).to.equal(-1);
     });
 
     it("[12,90,105]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+        expect(aritGeo([12,90,105])).to.equal(-1);
     });
 
     it("[10,-5,10,2]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+        expect(aritGeo([10,-5,10,2])).to.equal(-1);
     });
 
     it("[-50,-19,-20,-18]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+        expect(aritGeo([-50,-19,-20,-18])).to.equal(-1);
     });
 
-    it("[52,23,16,198,0]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+    it("[2,23,16,198,0]", () => {
+        expect(aritGeo([2,23,16,198,0])).to.equal(-1);
     });
 
-    it("[0,1,0,1,0]", () => {
-        expect(aritGeo(5)).to.equal(-1);
+    it("[10,1,0,1,0]", () => {
+        expect(aritGeo([10,1,0,1,0])).to.equal(-1);
     });
 
     it("[5, 7, 9, 13, 15]", () => {

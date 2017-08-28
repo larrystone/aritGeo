@@ -20,15 +20,46 @@ export const aritGeo = (array) => {
 const isArithmetic = (array) => {
   const difference = array[1] - array[0];
   
-  const expectedLastElement = array[0] + (length - 1) * difference;
-
-  return array[length - 1] === expectedLastElement;
+  for (let i = 0; i < length; i++) {
+    if (difference !== array[i + 1] - array[i]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 const isGeometric = (array) => {
   const ratio = array[1] / array[0];
 
-  const expectedLastElement = array[0] * Math.pow(ratio, length - 1);
-  
-  return array[length - 1] === expectedLastElement;
+  for (let i = 0; i < array.length; i++) {
+    if (ratio !== array[i + 1] / array[i]) {
+      return false;
+    }
+  }
+  return true;
 }
+
+// let commonDifference = arr[1] - arr[0];
+//        let commonRatio = arr[1] / arr[0];
+//        let arithmetic = true;
+//        let geometric = true;
+       
+//        for (let i = 0; i < arr.length; i++) {
+//            if (commonDifference !== arr[i + 1] - arr[i]) {
+//                arithmetic = false;
+//            }
+//            if (commonRatio !== arr[i + 1] / arr[i]) {
+//                geometric = false;
+//            }
+//        }
+
+//        if (arithmetic) {
+//            return 'Arithmetic';
+//        }
+//        else if (geometric) {
+//            return 'Geometric';
+//        }
+//        else {
+//            return -1;
+//        }
+//    }
