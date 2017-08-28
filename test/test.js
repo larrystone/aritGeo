@@ -74,4 +74,12 @@ describe("aritGeo() for Arithmetic arrays", () => {
     it("[0,1,0,1,0]", () => {
         expect(aritGeo(5)).to.equal(-1);
     });
+
+    it("[5, 7, 9, 13, 15]", () => {
+        expect(aritGeo([5, 7, 9, 13, 15])).to.equal(-1);
+    });
+
+    it("[1, 3, 27, 81]", () => {
+        expect(aritGeo([1, 3, 27, 81])).to.equal(-1);
+    });
  });
