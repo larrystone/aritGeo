@@ -18,7 +18,7 @@ export const aritGeo = (array) => {
 }
 
 const isArithmetic = (array) => {
-  const difference = array[0] - array[1];
+  const difference = array[1] - array[0];
   
   const expectedLastElement = array[0] + (length - 1) * difference;
 
@@ -26,7 +26,7 @@ const isArithmetic = (array) => {
 }
 
 const isGeometric = (array) => {
-  const ratio = array[0] / array[2];
+  const ratio = array[1] / array[0];
 
   const expectedLastElement = array[0] * Math.pow(ratio, length - 1);
   
