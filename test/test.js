@@ -7,6 +7,10 @@ describe("aritGeo() for edge cases", () => {
     it("empty array [] ", () => {
         expect(aritGeo([])).to.equal(0);
     });
+
+    it("insufficient args array [1,4] ", () => {
+        expect(aritGeo([1,4])).to.equal('Array should have a minimum of 3 numbers');
+    });
  });
 
 describe("aritGeo() for Arithmetic arrays", () => {
