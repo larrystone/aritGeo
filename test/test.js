@@ -1,7 +1,7 @@
 'use strict';
 
-let expect = require('chai').expect;
-let aritGeo = require('../app/index.js');
+import { expect } from 'chai';
+import { aritGeo } from '../app/index.js';
 
 describe("aritGeo() for edge cases", () => {
     it("empty array [] ", () => {
