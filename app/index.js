@@ -20,8 +20,8 @@ export const aritGeo = (array) => {
 const isArithmetic = (array) => {
   const difference = array[1] - array[0];
   
-  for (let i = 0; i < length; i++) {
-    if (difference !== array[i + 1] - array[i]) {
+  for (let i = 0; i < length - 1; i++) {
+    if (typeof array[i] !== 'number' || difference !== array[i + 1] - array[i]) {
       return false;
     }
   }
@@ -31,8 +31,8 @@ const isArithmetic = (array) => {
 const isGeometric = (array) => {
   const ratio = array[1] / array[0];
 
-  for (let i = 0; i < array.length; i++) {
-    if (ratio !== array[i + 1] / array[i]) {
+  for (let i = 0; i < length - 1; i++) {
+    if (typeof array[i] !== 'number' || ratio !== array[i + 1] / array[i]) {
       return false;
     }
   }
