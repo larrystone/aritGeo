@@ -1,0 +1,25 @@
+{
+  "name": "aritgeo",
+  "version": "1.0.0",
+  "description": "A function that checks if an array elements are Arithmetic or Geometric in Progression",
+  "main": "/app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrystone/aritGeo.git"
+  },
+  "author": "Lawal Lanre E.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrystone/aritGeo/issues"
+  },
+  "homepage": "https://github.com/larrystone/aritGeo#readme",
+  "dependencies": {
+    "chai": "^4.1.1"
+  }
+}
